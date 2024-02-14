@@ -5,8 +5,9 @@ import { ASSET_CDN } from './endpoints'
 
 export const DEFAULT_META: PageMeta = {
   title: 'PowerSwap',
-  description: 'Trade, earn, and own crypto on the all-in-one multichain DEX',
-  image: `${ASSET_CDN}/web/og/hero.jpg`,
+  description:
+    'Powerswap is a leading DEX on the meter chain. Swap your favorite tokens, stake and earn at the highest yet most sustainable APY on meter.',
+  image: `/images/TwitterBanner.png`,
 }
 
 interface PathList {

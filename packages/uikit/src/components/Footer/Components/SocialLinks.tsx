@@ -20,29 +20,22 @@ const SocialLinks: React.FC<React.PropsWithChildren<FlexProps>> = ({ ...props })
         };
         const Icon = social.icon;
         const mr = index < socials.length - 1 ? (isMobile ? "16px" : "24px") : 0;
-        // if (social.items) {
-        //   return (
-        //     <Dropdown key={social.label} position="top" target={<Icon {...iconProps} mr={mr} />}>
-        //       {social.items.map((item) => (
-        //         <Link external key={item.label} href={item.href} aria-label={item.label} color="textSubtle">
-        //           {item.label}
-        //         </Link>
-        //       ))}
-        //     </Dropdown>
-        //   );
-        // }
-
         const StyledIcon = styled(Icon)`
+          margin-left: 10px;
           transition: transform 0.2s ease-in-out;
           &:hover {
             transform: scale(1.2); /* Scale up on hover */
           }
         `;
         return (
-          <Link external key={social.label} href={social.href} aria-label={social.label} mr={mr}>
-            {/* <Icon {...iconProps} /> */}
-            <StyledIcon {...iconProps} />
-          </Link>
+          // <Link external key={social.label} href={social.href} aria-label={social.label} mr={mr}>
+          //   <StyledIcon {...iconProps} />
+          // </Link>
+          <>
+            <div style={{ display: "flex", gap: "10px" }}>
+              <StyledIcon {...iconProps} />
+            </div>
+          </>
         );
       })}
     </Flex>

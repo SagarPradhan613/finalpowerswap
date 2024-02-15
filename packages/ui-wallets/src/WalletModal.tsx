@@ -82,7 +82,7 @@ const TabContainer = ({ children, docLink, docText }: PropsWithChildren<{ docLin
   return (
     <AtomBox position="relative" zIndex="modal" className={modalWrapperClass}>
       <AtomBox position="absolute" style={{ top: '-50px' }}>
-        <TabMenu activeIndex={index} onItemClick={setIndex} gap="10px" isColorInverse isShowBorderBottom={false}>
+        {/* <TabMenu activeIndex={index} onItemClick={setIndex} gap="10px" isColorInverse isShowBorderBottom={false}>
           <Tab
             style={{
               color: 'white',
@@ -106,7 +106,7 @@ const TabContainer = ({ children, docLink, docText }: PropsWithChildren<{ docLin
           >
             {t('What’s a Web3 Wallet?')}
           </Tab>
-        </TabMenu>
+        </TabMenu> */}
       </AtomBox>
       <AtomBox
         display="flex"
@@ -217,6 +217,7 @@ function WalletSelect<T>({
   const walletDisplayCount = wallets.length > displayCount ? displayCount - 1 : displayCount
   const walletsToShow = showMore ? wallets : wallets.slice(0, walletDisplayCount)
   const [selected] = useSelectedWallet()
+
   return (
     <AtomBox
       display="grid"
@@ -226,9 +227,57 @@ function WalletSelect<T>({
       pb="12px"
       className={walletSelectWrapperClass}
     >
+      {/* {walletsToShow.map((wallet) => {
+        const isImage = typeof wallet.icon === 'string'
+        const Icon = wallet.icon
+        console.log("wallettttt",wallet)
+        return (
+          <Button
+            key={wallet.id}
+            variant="text"
+            height="auto"
+            as={AtomBox}
+            display="flex"
+            alignItems="center"
+            style={{ justifyContent: 'flex-start', letterSpacing: 'normal', padding: '0' }}
+            flexDirection="column"
+            onClick={() => onClick(wallet)}
+          >
+            <AtomBox className={wallet.installed && promotedGradientClass} p="2px" borderRadius="12px" mb="4px">
+              <AtomBox
+                bgc="dropdown"
+                display="flex"
+                position="relative"
+                justifyContent="center"
+                alignItems="center"
+                className={walletIconClass}
+                style={{ borderRadius: '13px' }}
+                overflow="hidden"
+              >
+                {isImage ? (
+                  <Image src={Icon as string} width={50} height={50} />
+                ) : (
+                  <Icon width={24} height={24} color="textSubtle" />
+                )}
+                {wallet.id === selected?.id && (
+                  <AtomBox position="absolute" inset="0px" bgc="secondary" opacity="0.5" borderRadius="12px" />
+                )}
+              </AtomBox>
+            </AtomBox>
+            <Text fontSize="12px" textAlign="center">
+              {wallet.title}
+            </Text>
+          </Button>
+        )
+      })} */}
       {walletsToShow.map((wallet) => {
         const isImage = typeof wallet.icon === 'string'
         const Icon = wallet.icon
+
+        // Check if the wallet title should be excluded
+        if (['Binance Web3 Wallet', 'Binance Wallet', 'Coinbase Wallet', 'Opera Wallet'].includes(wallet.title)) {
+          return null // Skip rendering this wallet
+        }
 
         return (
           <Button
@@ -269,7 +318,8 @@ function WalletSelect<T>({
           </Button>
         )
       })}
-      {!showMore && wallets.length > walletDisplayCount && (
+
+      {/* {!showMore && wallets.length > walletDisplayCount && (
         <AtomBox display="flex" justifyContent="center" alignItems="center" flexDirection="column">
           <Button height="auto" variant="text" as={AtomBox} flexDirection="column" onClick={() => setShowMore(true)}>
             <AtomBox
@@ -286,7 +336,7 @@ function WalletSelect<T>({
             </Text>
           </Button>
         </AtomBox>
-      )}
+      )} */}
     </AtomBox>
   )
 }
@@ -489,7 +539,8 @@ const Intro = ({ docLink, docText }: { docLink: string; docText: string }) => {
         as={LinkExternal}
         color="backgroundAlt"
         variant="subtle"
-        href={docLink}
+        // href={docLink}
+        href="https://powerswap-2.gitbook.io/powerswap/powerswap/get-started-powerswap/connecting-wallet-to-powerswap"
       >
         {docText}
       </Button>

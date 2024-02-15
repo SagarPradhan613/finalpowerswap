@@ -14,6 +14,6 @@ export const SEO: DefaultSeoProps = {
     description:
       'Powerswap is a leading DEX on the meter chain. Swap your favorite tokens, stake and earn at the highest yet most sustainable APY on meter.',
     // images: [{ url: 'https://assets.pancakeswap.finance/web/og/v2/hero.jpg' }],
-    images: [{ url: '/images/TwitterBanner.png' }],
+    images: [{ url: '/images/newtwitterbanner.png' }],
   },
 }

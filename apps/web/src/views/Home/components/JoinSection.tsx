@@ -231,12 +231,12 @@ const JoinSection = () => {
         <AbsoluteThirdRightMask>
           <img src="images/thirdrightmask.png" alt="img" />
         </AbsoluteThirdRightMask>
-        <ColorHeader>Join Us Now!</ColorHeader>
+        <ColorHeader>Become A Part Of</ColorHeader>
         <WhiteHeader>PowerSwap Community</WhiteHeader>
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
           <ThirdMainPara>
-            Lorem ipsum is a placeholder text commonly used to <br />
-            demonstrate the visual form of a document.
+            Become a part of our fastest growing community, discover activities and stay up-to-date with latest events
+            and developments.
           </ThirdMainPara>
         </div>
         <SocialMainContainer>
@@ -245,20 +245,14 @@ const JoinSection = () => {
           </div>
           <SocialContainer>
             <LogoBox>
-              <a href="https://twitter.com/pancakeswap" target="_blank" rel="noreferrer">
-                <img src="images/twitterlogo.png" style={{ width: '100%' }} alt="img" />
-              </a>
+              <img src="images/twitterlogo.png" style={{ width: '100%' }} alt="img" />
             </LogoBox>
 
             <LogoBox>
-              <a href="https://web.telegram.org/" target="_blank" rel="noreferrer">
-                <img src="images/telelogo.png" style={{ width: '100%' }} alt="img" />
-              </a>
+              <img src="images/telelogo.png" style={{ width: '100%' }} alt="img" />
             </LogoBox>
             <LogoBox>
-              <a href="https://discord.com/invite/pancakeswap" rel="noreferrer" target="_blank">
-                <img src="images/disclogo.png" style={{ width: '100%' }} alt="img" />
-              </a>
+              <img src="images/disclogo.png" style={{ width: '100%' }} alt="img" />
             </LogoBox>
           </SocialContainer>
           <div>

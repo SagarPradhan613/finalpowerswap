@@ -172,11 +172,11 @@ const ForthSection = () => {
           <img src="images/forthleft.png" alt="img" />
         </AbsoluteForthLeft>
         <MainLeft>
-          <LeftWhiteHeader>Fully Decentralized And</LeftWhiteHeader>
-          <LeftColHeader>Secure Ecosystem</LeftColHeader>
+          <LeftWhiteHeader>Decentralization & Security</LeftWhiteHeader>
+          <LeftColHeader>At Its Best</LeftColHeader>
           <ForthMainPara>
-            Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface
-            without relying on meaningful content.
+            PowerSwap is unwavering in its commitment to build trust, ensuring transparency through state-of-the-art
+            security measures to protect users`&apos;` funds.
           </ForthMainPara>
 
           <ButtonContainer>

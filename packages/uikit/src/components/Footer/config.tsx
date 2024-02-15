@@ -146,27 +146,27 @@ export const socials = [
     //     href: "https://t.me/PancakeSwapAnn",
     //   },
     // ],
-    href: "https://web.telegram.org/",
+    // href: "https://web.telegram.org/",
   },
   {
     label: "Twitter",
     icon: TwitterIcon,
-    href: "https://twitter.com/pancakeswap",
+    // href: "https://twitter.com/pancakeswap",
   },
   {
     label: "Discord",
     icon: DiscordIcon,
-    href: "https://discord.gg/pancakeswap",
+    // href: "https://discord.gg/pancakeswap",
   },
   {
     label: "Reddit",
     icon: RedditIcon,
-    href: "https://reddit.com/r/pancakeswap",
+    // href: "https://reddit.com/r/pancakeswap",
   },
   {
     label: "Instagram",
     icon: InstagramIcon,
-    href: "https://instagram.com/pancakeswap_official",
+    // href: "https://instagram.com/pancakeswap_official",
   },
   // {
   //   label: "Github",
@@ -177,7 +177,7 @@ export const socials = [
   {
     label: "Youtube",
     icon: YoutubeIcon,
-    href: "https://www.youtube.com/@pancakeswap_official",
+    // href: "https://www.youtube.com/@pancakeswap_official",
   },
 ];
 

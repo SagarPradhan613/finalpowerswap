@@ -21,6 +21,9 @@ export const StyledListItem = styled.li`
   margin-bottom: 8px;
   text-transform: capitalize;
 
+  // remove this style after adding links
+  padding-top: 5px;
+
   &:first-child {
     color: ${darkColors.secondary};
     font-weight: 600;
@@ -54,4 +57,7 @@ export const StyledSocialLinks = styled(SocialLinks)`
 
 export const StyledText = styled.span`
   color: ${darkColors.text};
+
+  // erase this style on adding actual links
+  font-weight: 600;
 `;

@@ -7,7 +7,7 @@ export const DEFAULT_META: PageMeta = {
   title: 'PowerSwap',
   description:
     'Powerswap is a leading DEX on the meter chain. Swap your favorite tokens, stake and earn at the highest yet most sustainable APY on meter.',
-  image: `/images/TwitterBanner.png`,
+  image: `/images/newtwitterbanner.png`,
 }
 
 interface PathList {

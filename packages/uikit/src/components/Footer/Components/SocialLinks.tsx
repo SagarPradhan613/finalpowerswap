@@ -1,3 +1,4 @@
+import styled from "styled-components";
 import React from "react";
 import { FlexProps } from "../../Box";
 import Flex from "../../Box/Flex";
@@ -30,9 +31,17 @@ const SocialLinks: React.FC<React.PropsWithChildren<FlexProps>> = ({ ...props })
         //     </Dropdown>
         //   );
         // }
+
+        const StyledIcon = styled(Icon)`
+          transition: transform 0.2s ease-in-out;
+          &:hover {
+            transform: scale(1.2); /* Scale up on hover */
+          }
+        `;
         return (
           <Link external key={social.label} href={social.href} aria-label={social.label} mr={mr}>
-            <Icon {...iconProps} />
+            {/* <Icon {...iconProps} /> */}
+            <StyledIcon {...iconProps} />
           </Link>
         );
       })}

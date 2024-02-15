@@ -224,12 +224,12 @@ const NewHeroSection = () => {
         </div>
         <LeftContainer>
           <HeadingWhite>Unlock</HeadingWhite>
-          <HeadingWhite2>Limitless Possibilities In</HeadingWhite2>
-          <HeadingPrimary>Decentralized Treading</HeadingPrimary>
+          <HeadingWhite2>Limitless Possibilities Of</HeadingWhite2>
+          <HeadingPrimary>Decentralized Finance</HeadingPrimary>
           <HeroLeftPara>
-            Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface
-            without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is
-            available.
+            Unlock limitless possibilities and redefine your financial journey with the leading decentralized exchange
+            (DEX) on the Meter chain. Empower yourself with seamless transactions, unparalleled security, and the
+            freedom to explore a world of financial opportunities.
           </HeroLeftPara>
         </LeftContainer>
         <RightContainer>

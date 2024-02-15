@@ -253,6 +253,10 @@ const Stats = () => {
   })
   const { isMobile, isSm, isMd, isXxl } = useMatchBreakpoints()
 
+  const NewUserCount = 112487
+  const NewTradesCount = 488510
+  const NewStakedCount = 1439131
+
   return (
     // <Flex justifyContent="center" alignItems="center" flexDirection="column" overflow="hidden">
     //   <Text textAlign="center" lineHeight="110%" fontWeight={600} mb="4px" fontSize={isMobile ? '20px' : '32px'}>
@@ -325,12 +329,11 @@ const Stats = () => {
           <img src="images/thirdrightmask.png" alt="img" />
         </AbsoluteThirdRightMask>
         <ResponsiveContainer>
-          <ColorHeader>Home For Defi</ColorHeader>
-          <WhiteHeader>Used By Millions , Trusted With Billions</WhiteHeader>
+          <ColorHeader>Supercharging DeFi</ColorHeader>
+          <WhiteHeader>Unmatchable Trust From Users</WhiteHeader>
           <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
             <ThirdMainPara>
-              Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface
-              without relying on meaningful content.
+              DeFi users are loving every single feature of PowerSwap and the word is spreading fast.
             </ThirdMainPara>
           </div>
         </ResponsiveContainer>
@@ -343,7 +346,8 @@ const Stats = () => {
             <MetricsCard
               width={isSm || isMd ? '100%' : 'auto'}
               title={t('Users')}
-              value={addressCount}
+              // value={addressCount}
+              value={NewUserCount}
               description={t('in the last 30 days')}
             />
           </Box>
@@ -351,13 +355,24 @@ const Stats = () => {
             <ProfileBox>
               <img src="images/pp2.png" alt="img" />
             </ProfileBox>
-            <MetricsCard title={t('Trades')} value={txCount} description={t('in the last 30 days')} />
+            <MetricsCard
+              title={t('Trades')}
+              // value={txCount}
+              value={NewTradesCount}
+              description={t('in the last 30 days')}
+            />
           </Box>
           <Box>
             <ProfileBox>
               <img src="images/pp3.png" alt="img" />
             </ProfileBox>
-            <MetricsCard title={t('Staked')} value={tvl} description={t('in the last 30 days')} prefix="$" />
+            <MetricsCard
+              title={t('Staked')}
+              //  value={tvl}
+              value={NewStakedCount}
+              description={t('in the last 30 days')}
+              prefix="$"
+            />
           </Box>
         </BoxContainers>
       </MainContainer>

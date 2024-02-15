@@ -66,10 +66,10 @@ const MenuItem: React.FC<React.PropsWithChildren<FooterProps>> = ({
         >
           <Box pb={["20px", null, null]} style={{ width: "23%" }} display={["none", null, "block"]}>
             {isXl ? <LogoWithTextIcon width="160px" /> : <LogoWithTextIcon width="160px" />}
-            <p style={{ marginTop: "20px", lineHeight: "30px", color: "white", fontSize: "16px", fontWeight: "500" }}>
+            {/* <p style={{ marginTop: "20px", lineHeight: "30px", color: "white", fontSize: "16px", fontWeight: "500" }}>
               Lorem ipsum is a placeholder text commonly to the visual form of a document or a typeface. Lorem ipsum is
               a placeholder text commonly used to the visual form.
-            </p>
+            </p> */}
           </Box>
           {items?.map((item) => (
             <StyledList key={item.label}>

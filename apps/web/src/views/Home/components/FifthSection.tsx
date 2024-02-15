@@ -242,10 +242,10 @@ const FifthSection = () => {
         <MainLeft>
           <LeftWhiteHeader>Power Up Your De-Fi</LeftWhiteHeader>
           <LeftWhiteHeader>Experience With</LeftWhiteHeader>
-          <LeftColHeader>Secure Ecosystem</LeftColHeader>
+          <LeftColHeader>POWER Token</LeftColHeader>
           <ForthMainPara>
-            Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface
-            without relying on meaningful content.
+            POWER is the lifeblood of PowerSwap and unlocks multiple benefits. Use it to farm, stake, play and earn
+            rewards.
           </ForthMainPara>
 
           <ButtonContainer>
@@ -255,7 +255,7 @@ const FifthSection = () => {
                 style={{ borderRadius: isXs ? 12 : undefined, padding: '0 2rem', width: '184px' }}
                 variant="primary"
               >
-                {t('Explore')}
+                {t('Buy POWER')}
               </Button>
             </a>
 

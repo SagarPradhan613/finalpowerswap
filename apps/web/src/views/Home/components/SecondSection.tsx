@@ -249,7 +249,7 @@ const SecondSection: React.FC<SecondSectionProps> = () => {
   // Return cleanup function
   // @ts-ignore
   useEffect(() => {
-    if (!chartContainerRef.current) return {}
+    if (!chartContainerRef.current) return
 
     const areaChart = createChart(chartContainerRef.current, {
       width: chartContainerRef.current.clientWidth,
@@ -284,13 +284,12 @@ const SecondSection: React.FC<SecondSectionProps> = () => {
     const areaS = areaChart.addAreaSeries() // Add area series initially
     setAreaSeries(areaS)
 
-    // Return cleanup function
-    // @ts-ignore
+    // eslint-disable-next-line consistent-return
     return () => {
-      // Clean up any resources here
-      // @ts-ignore
-      areaChart.removeSeries(areaS)
-      areaChart.remove()
+      if (areaChart && areaS) {
+        areaChart.removeSeries(areaS)
+        areaChart.remove()
+      }
     }
   }, [])
 
@@ -350,7 +349,7 @@ const SecondSection: React.FC<SecondSectionProps> = () => {
   const [alternateAreaSeries, setAlternateAreaSeries] = useState<any>(null)
 
   useEffect(() => {
-    if (!alternateChartContainerRef.current) return {}
+    if (!alternateChartContainerRef.current) return
 
     const alternateAreaChart = createChart(alternateChartContainerRef.current, {
       width: alternateChartContainerRef.current.clientWidth,
@@ -384,11 +383,11 @@ const SecondSection: React.FC<SecondSectionProps> = () => {
 
     const alternateAreaS = alternateAreaChart.addAreaSeries() // Add area series initially
     setAlternateAreaSeries(alternateAreaS)
-
-    // Return cleanup function
-    return () => {
+    // @ts-ignore
+    // eslint-disable-next-line consistent-return
+    return (): void => {
       // Clean up any resources here
-      // @ts-ignore
+
       alternateAreaChart.removeSeries(alternateAreaS)
       alternateAreaChart.remove()
     }
@@ -426,7 +425,7 @@ const SecondSection: React.FC<SecondSectionProps> = () => {
   const [barSeries, setBarSeries] = useState<any>(null)
 
   useEffect(() => {
-    if (!barChartContainerRef.current) return {}
+    if (!barChartContainerRef.current) return
 
     const barAreaChart = createChart(barChartContainerRef.current, {
       width: barChartContainerRef.current.clientWidth,
@@ -465,9 +464,9 @@ const SecondSection: React.FC<SecondSectionProps> = () => {
     }) // Add bar series initially
     setBarSeries(barS)
 
-    // Return cleanup function
-    return () => {
-      // Clean up any resources here
+    // @ts-ignore
+    // eslint-disable-next-line consistent-return
+    return (): void => {
       // @ts-ignore
       barAreaChart.removeSeries(barS)
       barAreaChart.remove()
